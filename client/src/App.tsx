@@ -12,7 +12,7 @@ function Router() {
   const [location] = useLocation();
   
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="sync">
       <Switch location={location} key={location}>
         <Route path="/" component={Home} />
         <Route path="/projects" component={Projects} />
