@@ -11,7 +11,14 @@ export function CTASection() {
   const handleResumeClick = (e: React.MouseEvent) => {
     e.preventDefault();
     // In a real implementation, this would download a resume file
-    alert("Resume download feature will be implemented with a real file");
+     const link = document.createElement('a');
+    link.href = '/assets/CV.pdf'; // Path to your CV file
+    link.target = '_blank';
+
+    link.setAttribute('download', 'CV.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -48,7 +55,7 @@ export function CTASection() {
             variant="default"
             size="lg"
             onClick={handleContactClick}
-            className="px-8 py-3 rounded-full bg-white text-primary hover:bg-white/90 transition-colors duration-300 shadow-md hover:shadow-lg font-medium"
+            className="px-8 py-3 rounded-full border-2 bg-white text-primary hover:bg-white/10 transition-colors duration-300 shadow-md hover:shadow-lg font-medium"
           >
             Contact Me
           </Button>
@@ -57,7 +64,7 @@ export function CTASection() {
             variant="outline"
             size="lg"
             onClick={handleResumeClick}
-            className="px-8 py-3 rounded-full border-2 border-white hover:bg-white/10 transition-colors duration-300 font-medium text-white"
+            className="px-8 py-3 rounded-full border-2 bg-white text-primary hover:bg-white/10 transition-colors duration-300 shadow-md hover:shadow-lg font-medium "
           >
             Download Resume
           </Button>

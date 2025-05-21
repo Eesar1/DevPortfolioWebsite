@@ -5,7 +5,14 @@ export function AboutSection() {
   const handleDownloadCV = (e: React.MouseEvent) => {
     e.preventDefault();
     // In a real implementation, this would download a CV file
-    alert("CV download feature will be implemented with a real file");
+    const link = document.createElement('a');
+    link.href = '/assets/CV.pdf'; // Path to your CV file
+    link.target = '_blank';
+
+    link.setAttribute('download', 'CV.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -48,7 +55,7 @@ export function AboutSection() {
               I'm a Full-stack Web Developer with 5+ years of experience in building exceptional digital experiences. I specialize in JavaScript, React, Node.js, and modern frontend frameworks.
             </p>
             <p className="text-lg mb-8 text-slate-700 dark:text-slate-300">
-              My journey in tech began when I built my first website at 14. Since then, I've worked with startups and established companies to create innovative solutions that solve real business problems.
+              My journey in tech began when I built my first website at 18. Since then, I've worked with startups and established companies to create innovative solutions that solve real business problems.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mb-8">
@@ -58,11 +65,11 @@ export function AboutSection() {
               </div>
               <div>
                 <h4 className="font-semibold mb-2 text-primary">Email:</h4>
-                <p>hello@easarhussain.com</p>
+                <p>eesarhussain99@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 text-primary">Location:</h4>
-                <p>San Francisco, CA</p>
+                <p>Lahore, Pakistan</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 text-primary">Availability:</h4>

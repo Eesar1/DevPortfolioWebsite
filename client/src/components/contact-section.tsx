@@ -97,7 +97,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Location</h4>
-                    <p className="text-slate-600 dark:text-slate-400">San Francisco, California, USA</p>
+                    <p className="text-slate-600 dark:text-slate-400">Lahore, Pakistan</p>
                   </div>
                 </div>
                 
@@ -107,7 +107,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-slate-600 dark:text-slate-400">hello@easarhussain.com</p>
+                    <p className="text-slate-600 dark:text-slate-400">easarhussain99@gmail.com</p>
                   </div>
                 </div>
                 
@@ -117,7 +117,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
-                    <p className="text-slate-600 dark:text-slate-400">+1 (555) 123-4567</p>
+                    <p className="text-slate-600 dark:text-slate-400">+92 3211090949</p>
                   </div>
                 </div>
                 
@@ -134,10 +134,14 @@ export function ContactSection() {
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-lg h-64">
-              {/* Google Maps iframe would go here in a real implementation */}
-              <div className="w-full h-full bg-slate-300 dark:bg-slate-700 flex items-center justify-center">
-                <i className="ri-map-2-line text-5xl text-slate-500 dark:text-slate-400"></i>
-              </div>
+                            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13615.123456789!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1644304256596!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
             </div>
           </motion.div>
           

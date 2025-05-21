@@ -40,7 +40,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/Eesar1" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors duration-300" 
@@ -49,7 +49,7 @@ export function Footer() {
                 <i className="ri-github-fill"></i>
               </a>
               <a 
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/eesar-hussain-094436181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors duration-300" 
@@ -116,23 +116,22 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <i className="ri-map-pin-line text-primary mt-1 mr-3"></i>
-                <span className="text-slate-400">San Francisco, California, USA</span>
+                <span className="text-slate-400">Lahore, Pakistan</span>
               </li>
               <li className="flex items-start">
                 <i className="ri-mail-line text-primary mt-1 mr-3"></i>
-                <span className="text-slate-400">hello@easarhussain.com</span>
+                <span className="text-slate-400">eesarhussain99@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <i className="ri-phone-line text-primary mt-1 mr-3"></i>
-                <span className="text-slate-400">+1 (555) 123-4567</span>
+                <span className="text-slate-400">+92 3211090949</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-slate-500 mb-4 md:mb-0">© {new Date().getFullYear()} Eesar Hussain. All rights reserved.</p>
-          <p className="text-slate-500">Designed and built with <span className="text-red-500">♥</span></p>
+            <div className="border-t border-slate-800 pt-8 flex flex-col items-center justify-center text-center">
+          <p className="text-slate-500 mb-4">© {new Date().getFullYear()} Eesar Hussain. All rights reserved.</p>
         </div>
       </div>
     </footer>

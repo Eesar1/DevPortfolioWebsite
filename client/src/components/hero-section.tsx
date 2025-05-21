@@ -57,7 +57,7 @@ export function HeroSection() {
             </div>
             <div className="flex space-x-6 mt-10">
               <motion.a
-                href="https://github.com"
+                href="https://github.com/Eesar1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-primary transition-colors duration-300"
@@ -67,7 +67,7 @@ export function HeroSection() {
                 <i className="ri-github-fill"></i>
               </motion.a>
               <motion.a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/eesar-hussain-094436181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:text-primary transition-colors duration-300"
@@ -105,7 +105,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <ProfileImage
-              src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500&q=80"
+              src="/images/about-bg.jpg"
               alt="Eesar Hussain"
             />
           </motion.div>

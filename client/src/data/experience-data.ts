@@ -11,9 +11,9 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     id: 1,
-    title: "Senior Frontend Developer",
+    title: "Frontend Developer",
     company: "TechCorp Inc.",
-    period: "2020 - Present",
+    period: "2023 - Present",
     description: "Led frontend development for multiple web applications, implemented new features, and improved performance, resulting in a 40% increase in user engagement.",
     achievements: [
       "Optimized React application performance by 60%",
@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
     id: 2,
     title: "Full-stack Developer",
     company: "WebSolutions Agency",
-    period: "2018 - 2020",
+    period: "2021 - 2022",
     description: "Developed end-to-end web solutions for various clients, from e-commerce platforms to custom CRM systems, using React, Node.js, and MongoDB.",
     achievements: [
       "Developed 10+ responsive web applications",
@@ -38,7 +38,7 @@ export const experiences: Experience[] = [
     id: 3,
     title: "Frontend Developer",
     company: "StartupX",
-    period: "2016 - 2018",
+    period: "2020 - 2021",
     description: "Built responsive user interfaces for a fast-growing SaaS startup. Collaborated with UX designers to implement and iterate on new features.",
     achievements: [
       "Implemented responsive designs with CSS/SCSS",
@@ -60,15 +60,15 @@ export const education: Education[] = [
   {
     id: 1,
     degree: "MSc Computer Science",
-    institution: "Stanford University",
-    period: "2014 - 2016",
+    institution: "COMSAT University",
+    period: "2027 - 2030",
     description: "Specialized in Software Engineering and Human-Computer Interaction. Graduated with honors."
   },
   {
     id: 2,
-    degree: "BSc Computer Engineering",
-    institution: "MIT",
-    period: "2010 - 2014",
+    degree: "BSc Computer Science",
+    institution: "Lahore Garrison University",
+    period: "2023 - 2027",
     description: "Focus on programming fundamentals, algorithms, and software design principles. Participated in multiple hackathons."
   }
 ];

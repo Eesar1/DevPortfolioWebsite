@@ -33,6 +33,9 @@ export const skillCategories: SkillCategory[] = [
 export const otherSkills: string[] = [
   "Git & GitHub",
   "Docker",
+  "Email Marketing",
+  "Resarch & Development",  
+  "Lead Generation",
   "CI/CD",
   "Redux",
   "Jest & Testing",

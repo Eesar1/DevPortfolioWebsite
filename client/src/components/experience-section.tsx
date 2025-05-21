@@ -6,7 +6,14 @@ export function ExperienceSection() {
   const handleDownloadResume = (e: React.MouseEvent) => {
     e.preventDefault();
     // In a real implementation, this would download a resume file
-    alert("Resume download feature will be implemented with a real file");
+     const link = document.createElement('a');
+    link.href = '/assets/CV.pdf'; // Path to your CV file
+    link.target = '_blank';
+
+    link.setAttribute('download', 'CV.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -104,7 +111,7 @@ export function ExperienceSection() {
                     <h4 className="text-xl font-bold">{edu.degree}</h4>
                     <p className="text-primary">{edu.institution}</p>
                   </div>
-                  <span className="px-4 py-1 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300">
+                  <span className="text-primary font-semibold">
                     {edu.period}
                   </span>
                 </div>

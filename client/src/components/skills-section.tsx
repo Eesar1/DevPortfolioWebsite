@@ -39,7 +39,7 @@ export function SkillsSection() {
                     <div className="h-2 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                       <motion.div 
                         className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
-                        initial={{ width: 0 }}
+                        initial={{ width: 88 }}
                         whileInView={{ width: `${skill.percentage}%` }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1, delay: 0.2 }}
@@ -64,7 +64,7 @@ export function SkillsSection() {
             {otherSkills.map((skill, index) => (
               <motion.span 
                 key={skill}
-                className="px-4 py-2 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300"
+                className="px-4 py-2 rounded-full text-sm font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-lg hover:bg-primary-200 dark:hover:bg-primary-800/50 hover:-translate-y-1"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
