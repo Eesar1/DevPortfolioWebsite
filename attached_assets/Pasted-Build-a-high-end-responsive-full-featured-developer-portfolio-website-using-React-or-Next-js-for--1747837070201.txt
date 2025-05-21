@@ -1,0 +1,74 @@
+Build a high-end, responsive, full-featured developer portfolio website using React (or Next.js for smoother routing), Tailwind CSS (or SCSS), and Framer Motion/GSAP for buttery smooth transitions. Design should follow a synergized, immaculate aesthetic with soft shadows, gradients, minimalistic typography, and full responsiveness for all screen sizes.
+
+📌 Main Features:
+Landing Page: Large hero section with smooth animation, dynamic greeting text, and placeholder to upload user's own profile picture.
+
+Smooth Navigation: Use animated, non-jarring transitions between pages (no full page reloads), including scrolling and link navigation.
+
+Dark/Light Mode Toggle: Provide a working toggle. Ensure that the theme switches correctly (currently stuck in one mode — needs fixing).
+
+About Me: Full page explaining skills, tools, journey, experience, and timeline UI for achievements.
+
+Projects Page:
+
+Include sample project cards with image, name, tech stack, GitHub/demo buttons.
+
+Create an additional “More Projects” page or modal (separate route preferred) with extended project list (supporting future scalability).
+
+Testimonials Page: Include sample testimonials from clients/friends with name, image, role, and review.
+
+Contact Page: Contact form with name/email/message and space for address, Google Maps iframe (optional), and social links.
+
+Resume Section: Add a downloadable CV button (PDF) that opens/downloads the user's file.
+
+Social Media Section: Fully linked with icons (GitHub, LinkedIn, X/Twitter, Instagram, etc.).
+
+Blog or "Spaces" Page: Optional — a page to share ideas, writings, or updates, sorted by date.
+
+GitHub Integration: Show live GitHub repository stats or contributions via GitHub Graph or pinned repo cards.
+
+Replaceable Assets: Use placeholder images and content to be easily editable by the user later.
+
+🛠 Tools & Fixes Required (Important):
+Navbar/Header Bug:
+
+The top navbar is currently too large or blurry, and overlaps the tagline text and name.
+
+Adjust height or padding/margin so the user’s full name and tagline are fully visible on load.
+
+Dark/Light Mode Toggle Issue:
+
+The toggle is stuck on one mode (either light or dark).
+
+Ensure the toggle can successfully switch themes and that the theme is preserved when navigating between pages.
+
+Missing Extended Project Showcase:
+
+Add a separate page or section to view more detailed projects, with expandable cards or filters.
+
+This should allow future scalability to add 10+ projects, each with images, tech tags, GitHub/demo links.
+
+Smooth Page Transitions:
+
+Ensure routing between pages is fluid, no abrupt loading (use Framer Motion/GSAP/Page Transitions).
+
+Header Optimization:
+
+The blurriness and size of the header bar should be toned down.
+
+Make sure it’s elegant but not intrusive.
+
+Theme Defaults + State Preservation:
+
+Remember user preference (light/dark) using localStorage or Context to prevent theme reset.
+
+💡 Bonus Enhancements (Optional but Recommended):
+Add loading animations or interactive micro-UX effects (hover effects, parallax scroll, etc.).
+
+Include "Skills Radar" or interactive chart for showcasing tool proficiency.
+
+Use animated SVGs or Lottie animations where appropriate.
+
+Add a newsletter subscription field (optional).
+
+Use clean, scalable, modular code. Organize components well (e.g., /components, /pages, /assets). Prioritize user control, clarity, and aesthetic balance in every part of the UI/UX. Make sure all placeholder content can easily be edited by the user (images, text, links).

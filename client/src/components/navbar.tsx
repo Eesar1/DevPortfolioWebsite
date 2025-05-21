@@ -44,14 +44,14 @@ export function Navbar() {
   return (
     <>
       <motion.nav 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur ${
-          isScrolled ? "bg-white/80 dark:bg-slate-900/80 shadow-md" : ""
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm ${
+          isScrolled ? "bg-white/80 dark:bg-slate-900/80 shadow-md" : "bg-transparent"
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
           <a 
             href="#hero" 
             className="text-xl font-bold relative z-10 gradient-text"

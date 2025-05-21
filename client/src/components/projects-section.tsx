@@ -134,6 +134,7 @@ export function ProjectsSection() {
             variant="outline"
             size="lg"
             className="px-6 py-3 rounded-full border-2 border-primary hover:bg-primary/10 text-primary transition-all duration-300"
+            onClick={() => window.location.href = "/projects"}
           >
             View All Projects <i className="ri-arrow-right-line ml-2"></i>
           </Button>
