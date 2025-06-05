@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import { motion } from "framer-motion";
 import { ProfileImage } from "./ui/profile-image";
 import { scrollToSection } from "@/lib/utils";
@@ -24,7 +26,9 @@ export function HeroSection() {
               Full-stack Web Developer
             </h2>
             <p className="text-lg mb-8 max-w-xl">
-              I build exceptional and accessible digital experiences for the web. Currently, I'm focused on building responsive full-stack web applications.
+              I build exceptional and accessible digital experiences for the web.
+              Currently, I'm focused on building responsive full-stack web
+              applications.
             </p>
             <div className="flex flex-wrap gap-4">
               <motion.a
@@ -105,7 +109,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <ProfileImage
-              src="/images/about-bg.jpg"
+               src={`${import.meta.env.BASE_URL}images/about-bg.jpg`}
               alt="Eesar Hussain"
             />
           </motion.div>

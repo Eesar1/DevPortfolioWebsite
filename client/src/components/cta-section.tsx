@@ -12,7 +12,7 @@ export function CTASection() {
     e.preventDefault();
     // In a real implementation, this would download a resume file
      const link = document.createElement('a');
-    link.href = '/assets/CV.pdf'; // Path to your CV file
+    link.href = `${import.meta.env.BASE_URL}assets/CV.pdf`; // Path to your CV file
     link.target = '_blank';
 
     link.setAttribute('download', 'CV.pdf');
