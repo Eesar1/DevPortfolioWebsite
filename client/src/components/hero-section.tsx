@@ -109,7 +109,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <ProfileImage
-               src={`${import.meta.env.BASE_URL}images/about-bg.jpg`}
+               src="https://eesar1.github.io/DevPortfolioWebsite/images/about-bg.jpg"
               alt="Eesar Hussain"
             />
           </motion.div>
