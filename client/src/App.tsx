@@ -1,4 +1,4 @@
-import { Switch, Route, useLocation } from "wouter";
+import { Router as WouterRouter, Switch, Route, useLocation } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,7 +10,7 @@ import { queryClient } from "./lib/queryClient";
 
 function Router() {
   const [location] = useLocation();
-  
+
   return (
     <AnimatePresence mode="sync">
       <Switch location={location} key={location}>
@@ -28,7 +28,10 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <Toaster />
-          <Router />
+          {/* Wrap your Router with WouterRouter and set the base */}
+          <WouterRouter base="/DevPortfolioWebsite">
+            <Router />
+          </WouterRouter>
         </TooltipProvider>
       </QueryClientProvider>
     </div>
